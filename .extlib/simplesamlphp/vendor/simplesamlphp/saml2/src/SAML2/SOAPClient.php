@@ -103,7 +103,7 @@ class SOAPClient
             }
             // create ssl context
             $ctxOpts['ssl']['verify_peer'] = true;
-            $ctxOpts['ssl']['verify_depth'] = 1;
+            $ctxOpts['ssl']['verify_depth'] = 9;
             $ctxOpts['ssl']['cafile'] = $peerCertFile;
         }
 
