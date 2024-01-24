@@ -104,7 +104,7 @@ class SOAPClient
             // create ssl context
             $ctxOpts['ssl']['verify_peer'] = true;
             $ctxOpts['ssl']['verify_depth'] = 9;
-            $ctxOpts['ssl']['cafile'] = $peerCertFile;
+            // $ctxOpts['ssl']['cafile'] = $peerCertFile;
         }
 
         if ($srcMetadata->hasValue('saml.SOAPClient.stream_context.ssl.peer_name')) {
